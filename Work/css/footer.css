@@ -1,0 +1,46 @@
+
+footer{
+    display: flex;
+    align-items: center;
+
+    margin: 20px auto auto auto;
+    background-color: var(--gray);
+    height: 15em;
+}
+
+
+/* ABOUT US */
+
+footer>p{
+    line-height: 5.5em;
+    padding-right: 3em;
+    margin: auto;
+    font-size: 2em;
+    border-right: solid 1px var(--green);
+    text-align: right;
+    width: 100%;
+    letter-spacing: .3em;
+}
+
+
+/* CONTACTS */
+
+.dev_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5em;
+}
+
+
+
+.dev{
+    margin-bottom: 0.1em;
+    line-height: 1.2em;
+    letter-spacing: .15em;
+
+}
+
+.dev:hover{
+    font-size: 1.1em;
+}

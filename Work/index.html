@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> WORKOUT </title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1691734459.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dk-theme">
+
+    <div class="navigation-bar">
+        <div class="logo">WORKOUT</div>
+        <nav>
+            <ul>
+              <li><i class="fa-solid fa-circle-half-stroke" id="theme-switcher"></i></li>
+                <li><a href="#popular_exercises">EXERCISES</a></li>
+                <li><a href="#trainers">TRAINERS</a></li>
+                <li><a href="#for_you">FOR YOU</a></li>
+                <li><a href="#contact_form">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="new_video_container">
+            <img src="images/new_video.png" alt="new_video">
+            <span class="new_box">
+                <span class="new">NEW</span>
+                Higth Intensity workout to burn calories
+                <i class="fa-regular fa-circle-xmark close-new" onclick="closeNew(this);"></i>
+            </span>
+
+            <h1>Cardio <br> Exersise</h1>
+            <div class="additional_text">
+                Curabitur tristique non lectus ac blandit. Pellentesque euismod consectetur porttitor. Vestibulum lorem purus, scelerisque
+                vitae convallis at, aliquet.
+            </div>
+            <button class="new_video_btn"onclick = "openModal();">Get Started</button>
+
+        </div>
+
+
+        <h2 id="popular_exercises">Popular Exercises</h2>
+        <div class="videos-container" >
+          <div class="videos-track">
+            <div class="video-item">
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=tBNqEwcvYjU"  target="_blank"><img src="images/video_1.jpeg" alt="treadmill"></a>
+                <p>Treadmill</p>
+              </div>
+            </div>
+            <div class="video-item">
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=g_tea8ZNk5A"  target="_blank"><img src="images/video_2.jpeg" alt="stretching"></a>
+                <p>Stretching</p>
+              </div>
+            </div>
+            <div class="video-item">
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=Vu_NnDWxKY4"  target="_blank"><img src="images/video_3.jpeg" alt="yoga"></a>
+                <p>Yoga</p>
+              </div>
+            </div>
+            <div class="video-item">
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=AiohKZonPbo"  target="_blank"><img src="images/video_4.jpeg" alt="running"></a>
+                <p>Running</p>
+              </div>
+            </div>
+            <div class="video-item">
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=Wxd5couUEM8"  target="_blank"><img src="images/video_5.jpeg" alt="lifting"></a>
+                <p>Lifting</p>
+              </div>
+            </div>
+            <div class="video-item">
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=Jf5_PJCFs-g"  target="_blank"><img src="images/video_6.jpeg" alt="pushup"></a>
+                <p>PushUp</p>
+              </div>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-left video-prev"></i>
+          <i class="fa-solid fa-chevron-right video-next"></i>
+        </div>
+
+
+        <h2 id="trainers">Trainers</h2>
+        <div class="trainers_box">
+                <div class="trainer1">
+                    <img src="images/trainer_1.jpg" alt="trainer" class="pic" height="250">
+                    <img src="images/trainer_1.jpg" alt="trainer" class="pic" height="250">
+                    <img src="images/trainer_1.jpg" alt="trainer" class="pic" height="250">
+                    <a class="pic-caption" >
+                        Hi, i'm Caroline Girvan
+                    </a>
+                </div>
+                <div class="trainer2">
+                    <img src="images/trainer_2.jpg" alt="trainer" class="pic1" height="250">
+                    <img src="images/trainer_2.jpg" alt="trainer" class="pic1" height="250">
+                    <img src="images/trainer_2.jpg" alt="trainer" class="pic1" height="250">
+                    <a class="pic1-caption" >
+                        Hi, i`m Akshaya Agnes
+                    </a>
+                </div>
+                <div class="trainer3">
+                    <img src="images/trainer_3.jpg" alt="trainer" class="pic2" height="250">
+                    <img src="images/trainer_3.jpg" alt="trainer" class="pic2" height="250">
+                    <img src="images/trainer_3.jpg" alt="trainer" class="pic2" height="250">
+                    <a class="pic2-caption">
+                        Hi, i`m Mady Morrison
+                    </a>
+                </div>
+        </div>
+
+
+        <h2>Workout Program Made For You</h2>
+        <div class="tooltips-container" id="for_you">
+            <div class="tooltip-box">
+                <p>01</p>Yoga
+                <span class="tooltip-text">
+                    Yoga improves strength, balance and flexibility. Slow movements and deep breathing increase blood
+                        flow and warm up muscles, while holding a pose can build strength.
+                </span>
+            </div>
+
+            <div class="tooltip-box">
+                <p>02</p>Cardio Exercises
+                <span class="tooltip-text">
+                   Strengthen your heart and blood vessels. Improve the flow of oxygen throughout your body. Lower your blood pressure
+                   and cholesterol. Reduce your risk for heart disease, diabetes, Alzheimer's disease, stroke, and some kinds of cancer.
+                </span>
+            </div>
+
+            <div class="tooltip-box">
+                <p>03</p>Strength Training
+                <span  class="tooltip-text">
+                    Strength training may enhance your quality of life and improve your ability to do everyday activities.
+                    Strength training can also protect your joints from injury. Building muscle also can contribute to better
+                    balance and may reduce your risk of falls.
+                </span>
+            </div>
+
+            <div class="tooltip-box">
+                <p>04</p>Weight Lifting
+                <span class="tooltip-text">
+                    Weight-bearing exercise is proven to improve bone density, which is a key factor in your ability to stay active
+                    as you age. In older people, lifting weights helps reduce the number of falls and fractures
+                </span>
+             </div>
+
+            <div class="tooltip-box">
+                <p>05</p>Flexibility Exercise
+                <span class="tooltip-text">
+                    Flexibility is the ability of a joint or series of joints to move through an unrestricted, pain free range of motion.
+                    Although flexibility varies widely from person to person, minimum ranges are necessary for maintaining joint and total body health.
+                </span>
+            </div>
+
+            <div class="tooltip-box">
+                <p>06</p>Running
+                <span class="tooltip-text">
+                    Running, or jogging, is one of the best cardio exercises you can do. Running for at least 10 minutes a day can significantly
+                    lower your risk of cardiovascular disease. Runners lower their chances of dying from heart disease by half
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="scroll-container">
+            <a href="#top"><img src="images/scroll.png" alt="To Top"></a>
+        </div>
+
+        <div class="contact-container" id="contact_form">
+            <p>Contact Us</p>
+            <form class="input_contact_group">
+                <input type="text" class="input_field" placeholder="Your Name" required>
+                <input type="text" class="input_field" placeholder="Your Email" required>
+                <textarea class="input_field" rows="5" cols="33" placeholder="Share your thoughts"></textarea>
+                <button type='submit' class='submit-btn'>Submit</button>
+            </form>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>About Us</p>
+        <div class="dev_box">
+            <p class="dev" ><a href="https://t.me/gimme_zen" target="_blank">Zhutnyk Daria</a></p>
+            <p class="dev" ><a href="https://t.me/beelzebub_and_them" target="_blank">Korniichuk Serhii</a></p>
+            <p class="dev" ><a href="https://t.me/likha_chova" target="_blank">Likhachova Anna</a></p>
+            <p class="dev" ><a href="https://t.me/wassup_ruabceva" target="_blank">Riabtseva Anna</a></p>
+        </div>
+    </footer>
+
+    <div class="progress-bar">
+      <div class="progress-bar-fill"></div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Link on Youtube page</h2>
+        <p>Aru you sure, you want to continue?</p>
+        <div class="buttons">
+          <button id="yes-btn">Yes</button>
+          <button id="no-btn">No</button>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+<script src="./js/theme.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/progress-bar.js"></script>
+<script src="./js/close-new.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>

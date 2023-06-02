@@ -1,0 +1,198 @@
+.trainers_box{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    height: 300px;
+}
+
+
+.trainers-container>img{
+    border: 1px solid #d2d2d2;
+    padding: 3px;
+    box-shadow: 0 0 15px black;
+}
+
+
+.trainer1 {
+    max-width: 210px;
+    max-height: 10px;
+    margin: 50px;     
+    margin-left: -30px;
+}
+
+.pic {
+    background: #fff;
+    position: absolute;
+    transition: all 0.2s ease;
+    backface-visibility:hidden;}
+
+.pix:nth-child(1) {
+    z-index: 3;
+}
+
+.pic:nth-child(2) {
+    z-index: 1;
+}
+
+.pic:nth-child(3) {
+    z-index: 2;
+}
+
+.trainer1:hover .pic:nth-child(1) {
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+
+.trainer1:hover .pic:nth-child(2) {
+    transform: rotate(7deg);
+    transition: all 0.10s ease;
+}
+
+.trainer1:hover .pic:nth-child(3) {
+    transform: rotate(-5deg);
+}
+
+.pic-caption {
+    background:  var(--green);
+    padding: 1px 10px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    top:90px;
+    left: 200px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.pic-caption:hover {
+    background: var(--green);
+}
+.trainer1:hover .pic-caption {
+    left:30px;
+    opacity: 1;
+}
+
+/*анимация для второго изображения*/
+
+.trainer2 {
+    max-width: 210px;
+    max-height: 10px;
+    margin: 50px;     
+}
+
+.pic1 {
+    background: #fff;
+    position: absolute;
+    transition: all 0.2s ease;
+    backface-visibility:hidden;}
+
+.pix:nth-child(1) {
+    z-index: 3;
+}
+
+.pic1:nth-child(2) {
+    z-index: 1;
+}
+
+.pic1:nth-child(3) {
+    z-index: 2;
+}
+
+.trainer2:hover .pic1:nth-child(1) {
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+
+.trainer2:hover .pic1:nth-child(2) {
+    transform: rotate(7deg);
+    transition: all 0.10s ease;
+}
+
+.trainer2:hover .pic1:nth-child(3) {
+    transform: rotate(-5deg);
+}
+
+.pic1-caption {
+    background:  var(--green);
+    padding: 1px 10px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    top:90px;
+    left: 200px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.pic1-caption:hover {
+    background: var(--green);
+}
+.trainer2:hover .pic1-caption {
+    left:30px;
+    opacity: 1;
+}
+/* aнимация для 3 изображения */
+
+.trainer3 {
+    max-width: 210px;
+    max-height: 10px;
+    margin: 50px;     
+}
+
+.pic2 {
+    background: #fff;
+    position: absolute;
+    transition: all 0.2s ease;
+    backface-visibility:hidden;}
+
+.pix:nth-child(1) {
+    z-index: 3;
+}
+
+.pic2:nth-child(2) {
+    z-index: 1;
+}
+
+.pic2:nth-child(3) {
+    z-index: 2;
+}
+
+.trainer3:hover .pic2:nth-child(1) {
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+
+.trainer3:hover .pic2:nth-child(2) {
+    transform: rotate(7deg);
+    transition: all 0.10s ease;
+}
+
+.trainer3:hover .pic2:nth-child(3) {
+    transform: rotate(-5deg);
+}
+
+.pic2-caption {
+    background:  var(--green);
+    padding: 1px 10px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    top: 90px;
+    left: 200px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.pic2-caption:hover {
+    background: var(--green);
+}
+.trainer3:hover .pic2-caption {
+    left:30px;
+    opacity: 1;
+}

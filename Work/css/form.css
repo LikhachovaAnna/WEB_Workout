@@ -1,0 +1,60 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    height: fit-content;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+body.lt-theme .contact-container {
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+
+.contact-container>p{
+    font-size: 2.5em;
+    width: 45%;
+    text-align: center;
+    margin: 20px auto;
+    border-bottom: 1px solid var(--green);
+}
+
+
+.input_field{
+    width: 80%;
+	margin: 2em 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+
+input[type="text"], textarea {
+    color : var(--main-text-color);
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: none;
+}
+
+.submit-btn{
+	position:relative;
+
+	cursor: pointer;
+	display: block;
+	margin: auto;
+
+    border: 0;
+  	outline: none;
+    font-size: 1em;
+
+    background: transparent;
+    color: var(--main-text-color);
+}
+
+.submit-btn:hover{
+    font-size: 1.1em;
+    border-bottom: 1px solid var(--green);
+}
